@@ -1,0 +1,31 @@
+{
+  "name": "bobir_site",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "dev": "webpack-dev-server",
+    "start": "concurrently npm:watch npm:dev",
+    "both": "npm run watch & npm run dev"
+
+  },
+  "keywords": [],
+  "author": "Faig",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.5.1",
+    "mini-css-extract-plugin": "^2.4.4",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.62.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
