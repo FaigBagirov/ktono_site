@@ -60,42 +60,80 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 //Modal window's functionality
-let modalButtons = document.querySelectorAll('.modal-button'),
+let modalButtons = document.querySelectorAll('.modal__button'),
 productModal = document.querySelector('.product-modal'),
-modalImage = productModal.querySelector('.product-modal img'),
+modalImage = productModal.querySelector('img'),
 modalHeader = productModal.querySelector('.modal-content__header'),
-modalTxt = productModal.querySelector('.modal content__txt'),
+modalTxt = productModal.querySelector('p'),
 modalWrapper = productModal.querySelector('.modal-wrapper'),
 modalOverlay = document.querySelector('.modal-overlay'),
-modalCloseBtn = document.querySelector('.modal-close');
+modalCloseBtn = document.querySelector('.modal-close'),
+modalContent = productModal.querySelector('.modal-content'),
+theHtml = document.querySelector('html');
 
+function openModal(button, target){
+    let showImage;
+    if (target instanceof HTMLImageElement){
+        showImage = target
+    }
+    else if(target.previousElementSibling instanceof HTMLImageElement){
+        // console.log("it's a figcaption", target.tagName)
+        showImage = target.previousElementSibling;
+    }
+    else{
+        showImage = target.parentElement.parentElement.getElementsByTagName('img')[0];
+    }
+        productModal.style.display = "block";
 
-function openModal(target){
-    let productImage = target.nextElementSibling;
-    productModal.classList.add('modal__checked');
-    modalWrapper.classList.add('modal-active');
-    modalOverlay.classList.add('overlay-active');
-    modalImage.src = productImage.src;
-    modalHeader.innerText = productImage.nextElementSibling.innerText;
+    setTimeout(() => {
+        productModal.classList.add('modal__checked');
+        modalWrapper.classList.add('modal-active');
+        // modalOverlay.classList.add('overlay-active');
+        theHtml.classList.add('hide__scroll');
+
+        //if there's some elements inside figcaptionthen it's a gallery
+        if (showImage.nextElementSibling.firstElementChild){
+            modalImage.classList.add("gallery__img");
+        }
+
+        modalImage.src = showImage.src;
+
+        if (button.dataset.fig !== undefined){
+            let content = document.querySelector('#' + button.dataset.fig),
+            text = content.querySelector('p');
+
+            // console.log('text', text);
+            modalHeader.innerHTML = content.firstElementChild.innerHTML;
+            modalTxt.innerHTML = text.innerHTML;
+            modalContent.classList.add('show__content');
+        }
+    }, 100);
+ 
 }
 
 let closeModal = ()=> {
     productModal.classList.remove('modal__checked');
     modalWrapper.classList.remove('modal-active');
-    modalOverlay.classList.remove('overlay-active');
+    // modalOverlay.classList.remove('overlay-active');
+    theHtml.classList.remove('hide__scroll');
+    modalContent.classList.remove('show__content');
+
+    if(modalImage.classList.contains('gallery__img')){
+        modalImage.classList.remove('gallery__img');
+    }
+    setTimeout(() => {
+        productModal.style.display = "none";
+    }, 500);
+    
 }
 
 modalButtons.forEach((element)=>{
-    console.log(element);
     element.addEventListener('click', (event)=>{
         let trgt = event.target;
-        openModal(trgt)
+        openModal(element, trgt)
     });
 });
 modalCloseBtn. addEventListener('click', (event)=>{closeModal()});
-
-
-
 
 // Sorting algorythm for the gallery
     let gallerySortingNames = document.querySelectorAll(".gallery-sorting__name"),

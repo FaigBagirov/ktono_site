@@ -11,7 +11,6 @@
 </head>
 
 <body>
-  <div class="modal-overlay">
     <div id="scroll-start-detector"></div>
     <section class="header">
       <div class="nav fixed" id="myNav">
@@ -47,38 +46,45 @@
         </div>
       </div>
       <div class="hero" id="home">
+        <img src="img/hero.jpg" alt="Hero image">
   
       </div>
     </section>
     <section class="pros">
       <div class="pros-wrapper">
-        <!-- <div class="pros-title"> -->
-        <h2 class="pros-title">Xidmətlərimiz</h2>
-        <!-- </div> -->
+        <div class="pros-title">
+          <h2 class="">Xidmətlərimiz</h2>
+        </div>
         <div class="pros-cards">
           <div class="pros-cards__item ">
-            <img src="img/svg/sell.svg" alt="quality icon">
-            <div class="pros-cards__heading">
+            <div class="pros-container">
+              <img src="img/svg/sell.svg" alt="quality icon">
               <h5>Material satışı</h5>
+            </div>
+            <div class="pros-cards__heading">
                 <p>
-                  Firmamız laminat, MDF, Melaminli MDF, Parlaq MDF Panel, Mətbəx İş Masaları, Arxalıq (HDF), Kənar bantları, Membran qapaq ucun PVC folqalar
-                 və sair materialların topdan və pərakəndə satışı ilə məşğuldur.
+                Laminat, MDF, Melaminli MDF, Parlaq MDF Panel, Mətbəx İş Masaları, 
+                Arxalıq (HDF), Kənar bantları və sair.
                 </p>
             </div>
           </div>
 
           <div class="pros-cards__item">
-            <img src="img/svg/mebel.svg" alt="warranty icon">
-            <div class="pros-cards__heading">
-              <h5>Mebel yığımı</h5>
-              <p>Firmamız hər növ mebellərin (Mətbəx, Yataq, Qonaq)
-                 istehsalıni yüksək keyfiyyətli materiallar və peşəkarlıqla yerinə yetirir. </p>
+              <div class="pros-container">
+                <img src="img/svg/mebel.svg" alt="warranty icon">
+                  <h5>Mebel yığımı</h5>
+              </div>
+              <div class="pros-cards__heading">
+              <p>Hər növ mebellərin (Mətbəx, Yataq, Qonaq)
+                 yüksək keyfiyyətli materiallar və peşəkarlıq ilə istehsalı. </p>
             </div>
           </div>
           <div class="pros-cards__item">
-            <img src="img/svg/kesim.svg" alt="free delivery icon">
-            <div class="pros-cards__heading">
-              <h5>Kəsim Xidməti</h5>
+            <div class="pros-container">
+              <img src="img/svg/kesim.svg" alt="free delivery icon">
+                <h5>Kəsim Xidməti</h5>
+            </div>
+              <div class="pros-cards__heading">
               <p>Şirkətimiz kəsim aparatları olmayan ustalara kəsim xidmətini göstərir</p>
             </div>
           </div>
@@ -86,24 +92,32 @@
 
         <div class="pros-cards">
           <div class="pros-cards__item ">
-            <img src="img/svg/uzleme.svg" alt="quality icon">
-            <div class="pros-cards__heading">
-              <h5>Üzləmə</h5>
-              <p> Məhsulları yaxşı tanımaq, müştərinin istədiyi  keyfiyyətli materialı uyğun qiymətlə təklif etmək firmamizin əsas üstünlüklərindəndir.</p>
+            <div class="pros-container">
+              <img src="img/svg/uzleme.svg" alt="quality icon">
+                <h5>Üzləmə</h5>
+            </div>
+              <div class="pros-cards__heading">
+              <p> Məhsulları yaxşı tanımaq, müştərinin istədiyi  keyfiyyətli materialı 
+                uyğun qiymətlə təklif etmək.
+              </p>
             </div>
           </div>
 
           <div class="pros-cards__item">
-            <img src="img/svg/bant.svg" alt="warranty icon">
-            <div class="pros-cards__heading">
-              <h5>Kənar Bantlama</h5>
+            <div class="pros-container">
+              <img src="img/svg/bant.svg" alt="warranty icon">
+                <h5>Kənar Bantlama</h5>
+            </div>
+              <div class="pros-cards__heading">
               <p>Kənar Bantlama aparatları olmayan mebel ustalarına firmamızda PVC bantlama xidməti göstərilir.</p>
             </div>
           </div>
           <div class="pros-cards__item">
-            <img src="img/free-delivery_icon.png" alt="free delivery icon">
-            <div class="pros-cards__heading">
-              <h5>Çatdırılma</h5>
+            <div class="pros-container">
+              <img src="img/free-delivery_icon.png" alt="free delivery icon">
+                <h5>Çatdırılma</h5>
+            </div>
+              <div class="pros-cards__heading">
               <p>Muxtəlif növlu yük maşınlarımız ilə muştərilərimizə material və mebellərin daşınması xidməti göstərilir. </p>
             </div>
           </div>
@@ -158,43 +172,53 @@
         </div>
         <div class="products__row">
           <figure class="products__product product-card__size__lg">
-            <button id="test-modal__btn" class="modal-button" data-fig="met-dez"></button>
+            <button id="test-modal__btn" class="modal__button" data-fig="met-dez">
+              <div class="vintage__overlay"></div>
             <img src="img/metbex_dez.jpg" alt="product preview 1">
             <figcaption class="products-product__title">
               Mətbəx Dəzgahı
             </figcaption>
+            </button>
           </figure>
 
           <figure class="products__product product-card__size__lg">
-            <button class="modal-button" data-fig="yon-lov"></button>
+            <button class="modal__button" data-fig="yon-lov">
+              <div class="vintage__overlay"></div>
             <img src="img/materiallar2.jpg" alt="product preview 2">
             <figcaption class="products-product__title">
               Yongar Lövhə
             </figcaption>
+            </button>
           </figure>
 
           <figure class="products__product product-card__size__md">
-            <button class="modal-button" data-fig="mdf"></button>
-            <img src="img/mdf1.jpg" alt="product preview 3">
-            <figcaption class="products-product__title">
-              MDF
-            </figcaption>
+            <button class="modal__button" data-fig="mdf">
+              <div class="vintage__overlay"></div>
+              <img src="img/mdf1.jpg" alt="product preview 3">
+              <figcaption class="products-product__title">
+                MDF
+              </figcaption>
+            </button>
           </figure>
 
           <figure class="products__product product-card__size__md">
-            <button class="modal-button" data-fig="arxaliq"></button>
+            <button class="modal__button" data-fig="arxaliq">
+              <div class="vintage__overlay"></div>
             <img src="img/arxaliq.jpg" alt="product preview 4">
             <figcaption class="products-product__title">
               Arxalıq
             </figcaption>
+            </button>
           </figure>
 
           <figure class="products__product product-card__size__md">
-            <button class="modal-button" data-fig="lam"></button>
+            <button class="modal__button" data-fig="lam">
+              <div class="vintage__overlay"></div>
             <img src="img/laminat_1.jpg" alt="product preview 5">
             <figcaption class="products-product__title">
               Laminat
             </figcaption>
+            </button>
           </figure>
 
           <button class="products-heading__more">Daha çox göstər...</button>
@@ -202,32 +226,40 @@
   <!-- -----------------------------------------------Daha çox göstər... start----------------------------------------------------------- -->
         <div class="products__row more-product-navs hide">
           <figure class="products__product product-card__size__lg">
-            <button class="modal-button" data-fig="mel-mdf"></button>
-            <img src="img/mel-mdf.jpg" alt="product preview 1">
-            <figcaption class="products-product__title">
-              Melaminli MDF
-            </figcaption>
+            <button class="modal__button" data-fig="mel-mdf">
+              <div class="vintage__overlay"></div>
+              <img src="img/mel-mdf.jpg" alt="product preview 1">
+              <figcaption class="products-product__title">
+                Melaminli MDF
+              </figcaption>
+            </button>
           </figure>
           <figure class="products__product product-card__size__lg">
-            <button class="modal-button" data-fig="ap-mdf"></button>
+            <button class="modal__button" data-fig="ap-mdf">
+              <div class="vintage__overlay"></div>
             <img src="img/ap-mdf.jpg" alt="product preview 2">
             <figcaption class="products-product__title">
               Üzlənmiş MDF
             </figcaption>
+            </button>
           </figure>
           <figure class="products__product product-card__size__md">
-            <button class="modal-button" data-fig="k-bant"></button>
+            <button class="modal__button" data-fig="k-bant">
+              <div class="vintage__overlay"></div>
             <img src="img/materiallar3.jpg" alt="product preview 3">
             <figcaption class="products-product__title">
               Kənar Bantları
             </figcaption>
+            </button>
           </figure>
           <figure class="products__product product-card__size__md">
-            <button class="modal-button" data-fig="osb"></button>
+            <button class="modal__button" data-fig="osb">
+              <div class="vintage__overlay"></div>
             <img src="img/materiallar4.jpg" alt="product preview 4">
             <figcaption class="products-product__title">
               OSB
             </figcaption>
+            </button>
           </figure>
           
         </div>
@@ -272,88 +304,112 @@
         </div>
         <div class="products__row products__row__sm">
           <figure class="products__product product-card__size__sm js-anbar">
-            <img src="img/anbar_1.jpeg" alt="product preview 1">
-            <figcaption class=" product-caption__sm var">
-              <h5>Anbar1</h5>
-              <p></p>
-            </figcaption>
+            <button class="modal__button">
+              <img src="img/anbar_1.jpeg" alt="product preview 1">
+              <figcaption class=" product-caption__sm var">
+                <h5>Anbar1</h5>
+                <p></p>
+              </figcaption>
+            </button>
           </figure>
           <figure class="products__product product-card__size__sm js-anbar">
-            <img src="img/anbar_2.jpeg" alt="product preview 1">
-            <figcaption class=" product-caption__sm var">
-              <h5>anbar2</h5>
-              <p></p>
-            </figcaption>
+            <button class="modal__button">
+              <img src="img/anbar_2.jpeg" alt="product preview 1">
+              <figcaption class=" product-caption__sm var">
+                <h5>anbar2</h5>
+                <p></p>
+              </figcaption>
+            </button>
           </figure>
           <figure class="products__product product-card__size__sm js-anbar">
-            <img src="img/anbar_3.jpeg" alt="product preview 1">
-            <figcaption class=" product-caption__sm var">
-              <h5>anbar2</h5>
-              <p></p>
-            </figcaption>
+            <button class="modal__button">
+              <img src="img/anbar_3.jpeg" alt="product preview 1">
+              <figcaption class=" product-caption__sm var">
+                <h5>anbar2</h5>
+                <p></p>
+              </figcaption>
+            </button>
           </figure>
           <figure class="products__product product-card__size__sm js-anbar">
-            <img src="img/anbar_4.jpeg" alt="product preview 1">
-            <figcaption class=" product-caption__sm var">
-              <h5>anbar2</h5>
-              <p></p>
-            </figcaption>
+            <button class="modal__button">
+              <img src="img/anbar_4.jpeg" alt="product preview 1">
+              <figcaption class=" product-caption__sm var">
+                <h5>anbar2</h5>
+                <p></p>
+              </figcaption>
+            </button>
           </figure>
           <figure class="products__product product-card__size__sm js-kesim">
-            <img src="img/kesim_1.jpeg" alt="product preview 1">
-            <figcaption class=" product-caption__sm var">
-              <h5>kesim1</h5>
-              <p></p>
-            </figcaption>
+            <button class="modal__button">
+              <img src="img/kesim_1.jpeg" alt="product preview 1">
+              <figcaption class=" product-caption__sm var">
+                <h5>kesim1</h5>
+                <p></p>
+              </figcaption>
+            </button>
           </figure>
           <figure class="products__product product-card__size__sm js-kesim">
-            <img src="img/kesim_2.jpeg" alt="product preview 1">
-            <figcaption class=" product-caption__sm var">
-              <h5>kesim2</h5>
-              <p></p>
-            </figcaption>
+            <button class="modal__button">
+              <img src="img/kesim_2.jpeg" alt="product preview 1">
+              <figcaption class=" product-caption__sm var">
+                <h5>kesim2</h5>
+                <p></p>
+              </figcaption>
+            </button>
           </figure>
           <figure class="products__product product-card__size__sm js-sergi">
-            <img src="img/sergi_1.jpg" alt="product preview 1">
-            <figcaption class=" product-caption__sm var">
-              <h5>sergi1</h5>
-              <p></p>
-            </figcaption>
+            <button class="modal__button">
+              <img src="img/sergi_1.jpeg" alt="product preview 1">
+              <figcaption class=" product-caption__sm var">
+                <h5>sergi1</h5>
+                <p></p>
+              </figcaption>
+            </button>
           </figure>
           <figure class="products__product product-card__size__sm js-sergi">
-            <img src="img/sergi_2.jpeg" alt="product preview 1">
-            <figcaption class=" product-caption__sm var">
-              <h5>sergi2</h5>
-              <p></p>
-            </figcaption>
+            <button class="modal__button">
+              <img src="img/sergi_2.jpg" alt="product preview 1">
+              <figcaption class=" product-caption__sm var">
+                <h5>sergi2</h5>
+                <p></p>
+              </figcaption>
+            </button>
           </figure>
           <figure class="products__product product-card__size__sm js-sergi">
-            <img src="img/sergi_3.jpg" alt="product preview 1">
-            <figcaption class=" product-caption__sm var">
-              <h5>sergi2</h5>
-              <p></p>
-            </figcaption>
+            <button class="modal__button">
+              <img src="img/sergi_3.jpg" alt="product preview 1">
+              <figcaption class=" product-caption__sm var">
+                <h5>sergi2</h5>
+                <p></p>
+              </figcaption>
+            </button>
           </figure>
           <figure class="products__product product-card__size__sm js-sergi">
-            <img src="img/sergi_4.jpg" alt="product preview 1">
-            <figcaption class=" product-caption__sm var">
-              <h5>sergi2</h5>
-              <p></p>
-            </figcaption>
+            <button class="modal__button">
+              <img src="img/sergi_4.jpg" alt="product preview 1">
+              <figcaption class=" product-caption__sm var">
+                <h5>sergi2</h5>
+                <p></p>
+              </figcaption>
+            </button>
           </figure>
           <figure class="products__product product-card__size__sm js-sergi">
-            <img src="img/sergi_5.jpg" alt="product preview 1">
-            <figcaption class=" product-caption__sm var">
-              <h5>sergi2</h5>
-              <p></p>
-            </figcaption>
+            <button class="modal__button">
+              <img src="img/sergi_5.jpg" alt="product preview 1">
+              <figcaption class=" product-caption__sm var">
+                <h5>sergi2</h5>
+                <p></p>
+              </figcaption>
+            </button>
           </figure>
           <figure class="products__product product-card__size__sm js-chatdir">
-            <img src="img/catdir_1.jpg" alt="product preview 1">
-            <figcaption class=" product-caption__sm var">
-              <h5>catdirilma1</h5>
-              <p></p>
-            </figcaption>
+            <button class="modal__button">
+              <img src="img/catdir_1.jpg" alt="product preview 1">
+              <figcaption class=" product-caption__sm var">
+                <h5>catdirilma1</h5>
+                <p></p>
+              </figcaption>
+            </button>
           </figure>
         </div>
       </div>
@@ -365,7 +421,7 @@
       <h2 class="pros-title pros2">Üstünlüklərimiz</h2>
       <!-- </div> -->
       <div class="pros-cards">
-        <div class="pros-cards__item ">
+        <div class="pros-cards__item pros__footer">
           <img src="img/svg/exp.svg" alt="quality icon">
           <div class="pros-cards__heading">
             <h5>İllərin təcrübəsi</h5>
@@ -374,7 +430,7 @@
           </div>
         </div>
 
-        <div class="pros-cards__item">
+        <div class="pros-cards__item pros__footer">
           <img src="img/svg/qiymet.svg" alt="warranty icon">
           <div class="pros-cards__heading">
             <h5>Uyğun qiymət</h5>
@@ -382,7 +438,7 @@
               qiymətlə təklif etmək firmamizin əsas üstünlüklərindəndir.</p>
           </div>
         </div>
-        <div class="pros-cards__item">
+        <div class="pros-cards__item pros__footer">
           <img src="img/free-delivery_icon.png" alt="free delivery icon">
           <div class="pros-cards__heading">
             <h5>Çatdırılma</h5>
@@ -446,162 +502,178 @@
       </div>
     </section>
     <script src="main.js"></script>
-</div>
-  <!-- ----------------------Products modal window start--------------------------- -->
-  <div class='product-modal'>
-    <div class="modal-wrapper">
-      <div class="modal-close main-sandwich-x sandwich">
-        <span class="sandwich-line sandwich-x__1"></span>
-        <span class="sandwich-line sandwich-x__2"></span>
+  
+
+<!-- ----------------------Products content start--------------------------- -->
+
+<div class="modal-cont-hidden" id="met-dez">
+  <h2 class="modal-content__header">
+    Mətbəx iş masaları (Worktops)
+  </h2>
+  <div class="modal content__txt">
+    <p>Mətbəxlərin vazkeçilməz detalı olan iş masaları muxtəlif materiallardan hazırlanır. Ən çox istifadə edilən masalar Yongar Lövhələrin HPL(High Pressure Laminate – Yuksək Sıxlıqlı Laminat) ilə qaplanması vasitəsi ilə istehsal edilir. Firmamiz aşağıdakı ölçulərdə mətbəx masalarının topdan və pərakəndə satışını təşkil edir
+      Qalınlıqlar 
+      25mm, 28mm, 38mm
+      Olçülər
+      Mm61x1830,  mm61x2440, mm61x3660
+      </p>
+  </div>
+  </div>
+
+
+  <div class="modal-cont-hidden" id="yon-lov" >
+    <h2 class="modal-content__header">Yonqar Lövhə
+    </h2>
+    <div class="modal content__txt">
+      <p> 
+        Türkiyədə Sunta (Süni taxta)
+         Rus dilində isə DSP (ДСП) adlanan bu lövhələr ağac yonqarlarının isti preslərdə 
+         xüsusi yapışqan və kimyəvi maddələrlə qarışdırılaraq yuksək təzyiqlə sıxılması nəticəsində əldə edilir.
+        <br>  Yonqar Lovhələr əsasən üzlənərək mebel istehsalında istifadə edilir. Divan kreslo kimi yumşaq mebellərin daxili hissələrində isə üzlənməmiş xam yonqar lövhələrdən istifadə olunur.
+         18mm qalınlıqda mm1830x2440 ölçülərdə Yonqar Lövhə satışımız mövcuddur.
+        </p>
+    </div>
+    </div>
+
+    <div class="modal-cont-hidden" id="mdf" >
+      <h2 class="modal-content__header">MDF (Middle Density Fiberboard) – Orta Sıxlıqlı Lifli Lövhə
+      </h2>
+      <div class="modal content__txt">
+        <p> 
+          Üyüdülüb toz şəklinə gətirilmiş ağacdan hazırlanan bu lövhələr yüksək sıxlığı(700-850 kg/m3) və üzərinə asanlıqla naxış və oymaların açıla bilinməsi xüsusiyyəti ilə fərqlənir. MDF lövhələr mebel istehsalında əvəz olunmaz rola malikdir. 
+              Firmamız Türkiyə, Rusiya və Belorus istehsalı olan aşağıdakı ölçulərdə MDF lövhələrin satışını yerinə yetirir.
+
+             <br><br> Qalınlıqlar  4mm – 30mm arası
+             <br> Ölçülər
+             <br> mm 2070 x 2080
+             <br> mm 2100 x 2800
+             <br> mm 1830 x 2440
+             <br> mm 1830 x 3660
+          </p>
       </div>
-      <img src="" alt="product preview 4">
-      <div class="modal-content">
-        <h2 class="modal-content__header"></h2>
-        <div class="modal content__txt">
-          <p></p>
-        </div>
       </div>
 
-      <div class="modal-content" id="met-dez">
-        <h2 class="modal-content__header">
-          Mətbəx iş masaları (Worktops)
+      <div class="modal-cont-hidden" id="arxaliq" >
+        <h2 class="modal-content__header">Arxalıq (HDF – High Density Fiberboard)
         </h2>
         <div class="modal content__txt">
-          <p>Mətbəxlərin vazkeçilməz detalı olan iş masaları muxtəlif materiallardan hazırlanır. Ən çox istifadə edilən masalar Yongar Lövhələrin HPL(High Pressure Laminate – Yuksək Sıxlıqlı Laminat) ilə qaplanması vasitəsi ilə istehsal edilir. Firmamiz aşağıdakı ölçulərdə mətbəx masalarının topdan və pərakəndə satışını təşkil edir
-            Qalınlıqlar 
-            25mm, 28mm, 38mm
-            Olçülər
-            Mm61x1830,  mm61x2440, mm61x3660
+          <p> 
+            Qalınlığı az olan (mm 2.5 – 4) Lifli Lövhələrin boyanması vəya qaplanması (laminasiya) 
+            üsulu ilə istehsal edilən bu lövhələr mebellərin 
+            arxa və görünməyən hissələrində işlədilir.
+             Firmamızda müxtəlif ölkələrin istehsalı olan Arxalıqlar aşağıdakı ölçulərdə təklif olunur
+            <br><br>
+             <br> mm 3x2500x2070
+             <br> mm 3x2800x2070
+             <br> mm 2.5x2500x2070
             </p>
         </div>
         </div>
 
-
-        <div class="modal-content" id="yon-lov" >
-          <h2 class="modal-content__header">Yonqar Lövhə
+        <div class="modal-cont-hidden" id="lam" >
+          <h2 class="modal-content__header">Laminat (Melaminli Yonqar Lövhə)
           </h2>
           <div class="modal content__txt">
             <p> 
-              Türkiyədə Sunta (Süni taxta)
-               Rus dilində isə DSP (ДСП) adlanan bu lövhələr ağac yonqarlarının isti preslərdə 
-               xüsusi yapışqan və kimyəvi maddələrlə qarışdırılaraq yuksək təzyiqlə sıxılması nəticəsində əldə edilir.
-              <br>  Yonqar Lovhələr əsasən üzlənərək mebel istehsalında istifadə edilir. Divan kreslo kimi yumşaq mebellərin daxili hissələrində isə üzlənməmiş xam yonqar lövhələrdən istifadə olunur.
-               18mm qalınlıqda mm1830x2440 ölçülərdə Yonqar Lövhə satışımız mövcuddur.
+                Laminat xam Yonqar Lövhələrin üzərinə xüsusi preslərdə melaminli dekorativ
+                kağızların yapışdırılması üsulu ilə hazırlanır. 
+                Firmamızda aşağıdakı ölçulərdə Laminat satışı topdan və pərakəndə şəkildə aparılır
+                <br><br> 2070 mm x 2800 mm
+                <br> 1830 mm x 2500 mm
+                <br> 1830 mm x 2440 mm
+                <br> 1830 mm x 2750 mm
+                <br> 1220 mm x 2440 mm
               </p>
           </div>
           </div>
 
-          <div class="modal-content" id="mdf" >
-            <h2 class="modal-content__header">MDF (Middle Density Fiberboard) – Orta Sıxlıqlı Lifli Lövhə
+          
+        <div class="modal-cont-hidden" id="mel-mdf" >
+          <h2 class="modal-content__header">Melaminli MDF
+          </h2>
+          <div class="modal content__txt">
+            <p> 
+              Firmamiz müxtəlif ölçu və dekorlarda birüzlü və ikiüzlü  Melaminli MDF məhsulların satışını reallaşdırır.
+             <br> Ölçülər
+             <br> mm 1830 x 2440
+             <br> mm 2070 x 2440
+             <br> mm 2100 x 2440
+              </p>
+          </div>
+          </div>
+
+          <div class="modal-cont-hidden" id="ap-mdf" >
+            <h2 class="modal-content__header">Akrilik və PVC üzlənmiş MDF Panellər
             </h2>
             <div class="modal content__txt">
               <p> 
-                Üyüdülüb toz şəklinə gətirilmiş ağacdan hazırlanan bu lövhələr yüksək sıxlığı(700-850 kg/m3) və üzərinə asanlıqla naxış və oymaların açıla bilinməsi xüsusiyyəti ilə fərqlənir. MDF lövhələr mebel istehsalında əvəz olunmaz rola malikdir. 
-                    Firmamız Türkiyə, Rusiya və Belorus istehsalı olan aşağıdakı ölçulərdə MDF lövhələrin satışını yerinə yetirir.
-
-                   <br><br> Qalınlıqlar  4mm – 30mm arası
-                   <br> Ölçülər
-                   <br> mm 2070 x 2080
-                   <br> mm 2100 x 2800
-                   <br> mm 1830 x 2440
-                   <br> mm 1830 x 3660
+                Azərbaycan, Türkiyə, Rusiya və Qərbi Avropa ölkələrində istehsal olunan Parlaq və Mat Panelləri uyğun qiymətlərlə muştərilərimizə təklif edirik
+                <br> Ölçü 
+                <br> mm 18x1220x2800
                 </p>
             </div>
             </div>
 
-            <div class="modal-content" id="arxaliq" >
-              <h2 class="modal-content__header">Arxalıq (HDF – High Density Fiberboard)
+            <div class="modal-cont-hidden" id="k-bant" >
+              <h2 class="modal-content__header">  Kənar Bantları
               </h2>
               <div class="modal content__txt">
                 <p> 
-                  Qalınlığı az olan (mm 2.5 – 4) Lifli Lövhələrin boyanması vəya qaplanması (laminasiya) 
-                  üsulu ilə istehsal edilən bu lövhələr mebellərin 
-                  arxa və görünməyən hissələrində işlədilir.
-                   Firmamızda müxtəlif ölkələrin istehsalı olan Arxalıqlar aşağıdakı ölçulərdə təklif olunur
-                  <br><br>
-                   <br> mm 3x2500x2070
-                   <br> mm 3x2800x2070
-                   <br> mm 2.5x2500x2070
+                  Mebel lövhələrinin açıq qalan kənarlarını qaplamaq üçün istifadə edilən bu kantlar PVC və Melaminli kağız materiallardan hazırlanır. Firmamızda hər iki çeşid 
+                  kənar bantları müxtəlif qalınlıqlarda təklif edilir. 
                   </p>
               </div>
               </div>
 
-              <div class="modal-content" id="lam" >
-                <h2 class="modal-content__header">Laminat (Melaminli Yonqar Lövhə)
+              <div class="modal-cont-hidden" id="osb" >
+                <h2 class="modal-content__header">  OSB (Oriented Strand Board – Yönləndirilmiş Yonqar Lövhə)
                 </h2>
                 <div class="modal content__txt">
                   <p> 
-                      Laminat xam Yonqar Lövhələrin üzərinə xüsusi preslərdə melaminli dekorativ
-                      kağızların yapışdırılması üsulu ilə hazırlanır. 
-                      Firmamızda aşağıdakı ölçulərdə Laminat satışı topdan və pərakəndə şəkildə aparılır
-                      <br><br> 2070 mm x 2800 mm
-                      <br> 1830 mm x 2500 mm
-                      <br> 1830 mm x 2440 mm
-                      <br> 1830 mm x 2750 mm
-                      <br> 1220 mm x 2440 mm
+                    OSB son illərdə inşaat, mebel və dekorasiya sahələrində özunə yer tapmış, günü-gündən istifadəsi
+                     artan bir materialdır. Müəyyən ölçülərdə doğranmış ağac yonqarlardan istehsal edilən OSB həyət evləri və mansardlarda, mebellərdə, 
+                     daxili məkanların dekorasiyası və başqa bir sıra sahələrdə istifadə edilir. Firmamız aşağıdakı ölçülərdə OSB lövhələrin satışını təşkil edir
+                     <br> Qalınlıqlar
+                     <br> 8mm, 9mm, 10mm, 11mm, 12mm, 15mm, 18mm, 22mm, 25mm
+                     <br> Ölçülər 
+                     <br> mm1220x2440
+                     <br>  mm1250x2500
                     </p>
                 </div>
                 </div>
 
-                
-              <div class="modal-content" id="mel-mdf" >
-                <h2 class="modal-content__header">Melaminli MDF
-                </h2>
-                <div class="modal content__txt">
-                  <p> 
-                    Firmamiz müxtəlif ölçu və dekorlarda birüzlü və ikiüzlü  Melaminli MDF məhsulların satışını reallaşdırır.
-                   <br> Ölçülər
-                   <br> mm 1830 x 2440
-                   <br> mm 2070 x 2440
-                   <br> mm 2100 x 2440
-                    </p>
-                </div>
-                </div>
+<!-- ----------------------Products content end--------------------------- -->
 
-                <div class="modal-content" id="ap-mdf" >
-                  <h2 class="modal-content__header">Akrilik və PVC üzlənmiş MDF Panellər
-                  </h2>
-                  <div class="modal content__txt">
-                    <p> 
-                      Azərbaycan, Türkiyə, Rusiya və Qərbi Avropa ölkələrində istehsal olunan Parlaq və Mat Panelləri uyğun qiymətlərlə muştərilərimizə təklif edirik
-                      <br> Ölçü 
-                      <br> mm 18x1220x2800
-                      </p>
-                  </div>
-                  </div>
-
-                  <div class="modal-content" id="k-bant" >
-                    <h2 class="modal-content__header">  Kənar Bantları
-                    </h2>
-                    <div class="modal content__txt">
-                      <p> 
-                        Mebel lövhələrinin açıq qalan kənarlarını qaplamaq üçün istifadə edilən bu kantlar PVC və Melaminli kağız materiallardan hazırlanır. Firmamızda hər iki çeşid 
-                        kənar bantları müxtəlif qalınlıqlarda təklif edilir. 
-                        </p>
-                    </div>
-                    </div>
-
-                    <div class="modal-content" id="osb" >
-                      <h2 class="modal-content__header">  OSB (Oriented Strand Board – Yönləndirilmiş Yonqar Lövhə)
-                      </h2>
-                      <div class="modal content__txt">
-                        <p> 
-                          OSB son illərdə inşaat, mebel və dekorasiya sahələrində özunə yer tapmış, günü-gündən istifadəsi
-                           artan bir materialdır. Müəyyən ölçülərdə doğranmış ağac yonqarlardan istehsal edilən OSB həyət evləri və mansardlarda, mebellərdə, 
-                           daxili məkanların dekorasiyası və başqa bir sıra sahələrdə istifadə edilir. Firmamız aşağıdakı ölçülərdə OSB lövhələrin satışını təşkil edir
-                           <br> Qalınlıqlar
-                           <br> 8mm, 9mm, 10mm, 11mm, 12mm, 15mm, 18mm, 22mm, 25mm
-                           <br> Ölçülər 
-                           <br> mm1220x2440
-                           <br>  mm1250x2500
-                          </p>
-                      </div>
-                      </div>
-
+<!-- ----------------------Products modal window start--------------------------- -->
+<div class='modal product-modal'>
+  <div class="modal-wrapper">
+    <div class="modal-close main-sandwich-x sandwich">
+      <span class="sandwich-line sandwich-x__1"></span>
+      <span class="sandwich-line sandwich-x__2"></span>
     </div>
+    <img src="" alt="product preview 4">
+    <div class="modal-content">
+      <h2 class="modal-content__header"></h2>
+      <div class="content__txt">
+        <p></p>
+      </div>
+    </div>
+  </div>
 </div>
-
 <!-- ----------------------Products modal window end--------------------------- -->
+
+<!-- ----------------------Gallery modal window start--------------------------- -->
+<!-- <div class='modal product-modal overflow: hidden;'>
+  <div class="modal-wrapper">
+    <div class="modal-close main-sandwich-x sandwich">
+      <span class="sandwich-line sandwich-x__1"></span>
+      <span class="sandwich-line sandwich-x__2"></span>
+    </div>
+    <img src="" alt="gallery photo">
+  </div>
+</div> -->
+<!-- ----------------------Gallery modal window end--------------------------- -->
+
 </body>
 
 </html>
