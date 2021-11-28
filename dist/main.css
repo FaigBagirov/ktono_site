@@ -556,7 +556,7 @@ button {
     outline: inherit;
 }
 h1 {
-    font-size: 60px;
+    font-size: 57px;
     color: white;
 }
 h2 {
@@ -678,15 +678,9 @@ h5 {
     color: rgb(255, 245, 227);
     text-decoration: none;
 }
-.menu-item__black{
-    color: black;
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
 
-.menu-item__white{
-    color: white !important;
+.main-menu__item:hover{
+    opacity: 0.7;
 }
 .sandwich {
     display: none;
@@ -753,14 +747,14 @@ h5 {
     width: 100%;
     height: 100vh;
 }
-.logo-container h1{
+ h1{
     position: absolute;
     font-family: Roboto;
     line-height: 1.2em;
     top: 28vh;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 40px 50px 40px 115px;
+    padding: 40px 55px 40px 118px;
 }
 
 .pros {
@@ -1019,6 +1013,7 @@ transition: color 0.5s ease 0.5s;
     margin: 15px 14px 0 0 ;
     display: block;
     position: absolute;
+    top: 100px;
     right: 0;
     cursor: pointer;
 }
@@ -1053,6 +1048,8 @@ transition: color 0.5s ease 0.5s;
       display: none;
   }
   .modal-content {
+      position: relative;
+      top: 10px;
     opacity: 0;
     color: rgb(255, 255, 255);
     font-family: 'Consolas', arial, sans-serif;
@@ -1313,7 +1310,9 @@ transition: color 0.5s ease 0.5s;
     padding: 119px 0;
     color: white;
 }
-
+.footer a li:hover{
+    opacity: 0.7;
+}
 .footer-wrapper {
     max-width: 1060px;
     margin: 0 auto;
@@ -1347,6 +1346,14 @@ transition: color 0.5s ease 0.5s;
 .menu-item li {
     padding: 5px 0;
 }
+
+.instagram__icon{
+    display: flex;
+    background: url(49b9753e8b2776cc655b.svg) left center no-repeat;
+    padding-left: 32px;
+    background-size: 25px;
+    line-height: 1.1em;
+}
 @media screen and (max-width:1200px) {
     .main-menu ul {
         gap: 3vw;
@@ -1368,12 +1375,16 @@ transition: color 0.5s ease 0.5s;
     }
 
     .product-card__size__sm {
-        grid-column: span 2 !important;
+        grid-column: span 3 ;
 
     }
 }
 
 @media screen and (max-width:767px) {
+    h1{
+        left: 50%;
+        transform: translateX(-50%);
+    }
     .main-menu {
         width: 100%;
         height: 100%;
@@ -1411,17 +1422,52 @@ transition: color 0.5s ease 0.5s;
         line-height: 1.7em;
     }
 
+    .pros-title {
+        text-align: center;
+        padding: 30px 0 30px;
+    }
+
+    
+    .pros-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .pros-cards__item {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: flex-start;
+        
+        flex-wrap: wrap;
+    }
+
+    .pros-cards__item img {
+        position: relative;
+        /* left: 50%;
+        transform: translateX(-50px); */
+        margin-bottom: 15px;
+
+    }
+    .product-card__size__sm {
+        grid-column: span 12;
+    }
+    .menu-item {
+        width: 50%;
+    }
     .footer-items,
     .footer-items__menu {
         justify-content: center;
     }
 
-    .menu-item {
-        width: 50%;
-    }
+
 }
 
 @media screen and (max-width:500px) {
+    h1 {
+        font-size: 18vw;
+        padding: 0;
+    }
     h2 {
         font-size: 30px;
     }
@@ -1434,37 +1480,12 @@ transition: color 0.5s ease 0.5s;
         font-size: 22px;
     }
 
-    .pros-title {
-        text-align: center;
-        padding: 30px 0 30px;
-    }
-
-    
-    .pros-cards {
-        padding: 0;
-    }
-
-    .pros-cards__item {
-        margin-bottom: 30px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .pros-cards__item img {
-        position: relative;
-        left: 50%;
-        transform: translateX(-50px);
-        margin-bottom: 15px;
-
-    }
 
     .about-container img {
         /* grid-template-columns: repeat(auto-fit, 1fr) !important; */
     }
 
-    .pros-cards {
-        flex-wrap: wrap;
-    }
+
 
     .products-heading {
         flex-wrap: wrap;

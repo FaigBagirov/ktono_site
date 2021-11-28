@@ -185,7 +185,7 @@
       <div class="products-wrapper">
         <div class="products-heading">
           <a href="">
-            <h2 class="products-heading__title">
+            <h2 class="products-heading__title" id="materials">
               Materiallarımız
             </h2>
           </a>
@@ -195,7 +195,7 @@
             <button id="test-modal__btn" class="modal__button" data-fig="met-dez">
               <div class="vintage__overlay"></div>
             <img src="img/metbex_dez.jpg" alt="product preview 1">
-            <figcaption class="products-product__title">
+            <figcaption class="products-product__title" id="mebDes">
               Mətbəx Dəzgahı
             </figcaption>
             </button>
@@ -205,7 +205,7 @@
             <button class="modal__button" data-fig="yon-lov">
               <div class="vintage__overlay"></div>
             <img src="img/materiallar2.jpg" alt="product preview 2">
-            <figcaption class="products-product__title">
+            <figcaption class="products-product__title" id="yonLov">
               Yongar Lövhə
             </figcaption>
             </button>
@@ -215,7 +215,7 @@
             <button class="modal__button" data-fig="mdf">
               <div class="vintage__overlay"></div>
               <img src="img/mdf1.jpg" alt="product preview 3">
-              <figcaption class="products-product__title">
+              <figcaption class="products-product__title" id="mdf">
                 MDF
               </figcaption>
             </button>
@@ -225,7 +225,7 @@
             <button class="modal__button" data-fig="arxaliq">
               <div class="vintage__overlay"></div>
             <img src="img/arxaliq.jpg" alt="product preview 4">
-            <figcaption class="products-product__title">
+            <figcaption class="products-product__title" id="arxa">
               Arxalıq
             </figcaption>
             </button>
@@ -235,7 +235,7 @@
             <button class="modal__button" data-fig="lam">
               <div class="vintage__overlay"></div>
             <img src="img/laminat_1.jpg" alt="product preview 5">
-            <figcaption class="products-product__title">
+            <figcaption class="products-product__title" id="lam">
               Laminat
             </figcaption>
             </button>
@@ -485,10 +485,18 @@
                 Materiallar
               </h4>
               <ul class="menu-item__list">
-                <li>MDF</li>
-                <li>Yongar Lövhə</li>
-                <li>Laminat</li>
-                <li>PVC</li>
+                <a href="#materials">
+                  <li>MDF</li>
+                </a>
+                <a href="#materials">
+                  <li>Yongar Lövhə</li>
+                </a>
+                <a href="#materials">
+                  <li>Laminat</li>
+                </a>
+                <a href="#materials">
+                  <li>PVC</li>
+                </a>
               </ul>
             </div>
   
@@ -500,7 +508,9 @@
                 <li>(+994)55 565 25 30</li>
                 <li>(+994)50 856 62 59</li>
                 <li class="address"> Adres: Bakı ş., Rəşid b. 9/56</li>
-                <li>Instagram</li>
+                <a href="https://www.instagram.com/laminat_mdf_osb_baki/" class="instagram__icon">
+                  <li>laminat_mdf_osb_baki</li>
+                </a>
                 <li></li>
                 <li></li>
               </ul>
