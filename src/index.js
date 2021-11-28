@@ -3,7 +3,8 @@ import "./css/style.css"
 document.addEventListener('DOMContentLoaded', () => {
 
 //Navigation bar style change on scroll algorythm (optimized)
-    var nav = document.getElementById("myNav"),
+    let nav = document.getElementById("myNav"),
+        menuItemBlack = document.querySelectorAll('.menu-item__black'),
         scrollDetector = document.getElementById("scroll-start-detector");
 
     //function handles callback when observer fires "observing/notObserving" events
@@ -11,15 +12,24 @@ document.addEventListener('DOMContentLoaded', () => {
         entriesArray.map((entry) => {
             if (entry.isIntersecting) {
                 // nav.classList.remove('visible');
-                nav.style.padding = "24px 0";
+                nav.style.padding = "34px 0";
 
-                nav.style.backgroundColor = "rgb(5, 55, 123, 0)";
+                // nav.style.backgroundColor = "#f4fafd";
+                nav.classList.remove('nav__sticky');
+                // menuItemBlack.forEach((item)=>{
+                //     item.classList.remove('menu-item__white');
+                // });
             } else {
                 // nav.classList.add('visible');
-                nav.style.padding = "20px 0";
+                nav.style.padding = "30px 0";
 
                 // nav.style.backgroundColor = "rgb(5, 55, 123, 0.4)";
-                nav.style.backgroundColor = "rgb(4, 28, 40, 0.5)";
+                // nav.style.backgroundColor = "rgb(4, 28, 40, 0.5)";
+                nav.classList.add('nav__sticky');
+                // menuItemBlack.forEach((item)=>{
+                //     item.classList.add('menu-item__white');
+                // });
+                
             }
         });
     }
