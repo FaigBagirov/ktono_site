@@ -595,7 +595,7 @@ h5 {
     overflow-x: hidden;
 }
 
-.nav-blue{
+/* .nav-blue{
     position: absolute;
     right: 0;
     top: 0;
@@ -603,9 +603,9 @@ h5 {
     height:50vh;
     background-color:black;
     /* transform:rotate(25deg); */
-    transform: translateX(40vw) translateY(100px) rotate(45deg);
-    max-width: 2000px;
-}
+    /* transform: translateX(40vw) translateY(100px) rotate(45deg);
+    max-width: 2000px; */
+/* } */ 
 
 .nav {
     z-index: 10;
@@ -691,7 +691,7 @@ h5 {
 .sandwich-line {
     display: block;
     position: absolute;
-    background-color: white;
+    background-color: black;
     width: 100%;
     height: 2px;
     left: 0;
@@ -920,7 +920,7 @@ h5 {
     z-index: -1;
     position: fixed;
     /* background: rgba(12, 70, 128, 0.5); */
-    background: rgba(0, 0, 0, 0.9);
+    background: white;
     height: 1px;
     overflow: hidden;
     position: fixed;
@@ -1038,7 +1038,9 @@ transition: color 0.5s ease 0.5s;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
-    grid-column: span 5;
+    /* grid-column: span 5; */
+    grid-column: span 6;
+    padding:100px;
     height: auto;
     object-fit: cover;
     overflow: hidden;
@@ -1048,21 +1050,24 @@ transition: color 0.5s ease 0.5s;
       display: none;
   }
   .modal-content {
-      position: relative;
-      top: 10px;
+    position: relative;
+    top: 10px;
     opacity: 0;
-    color: rgb(255, 255, 255);
-    font-family: 'Consolas', arial, sans-serif;
-    font-size: 2em;
-    text-align: center;
+    color: #5A5A5A;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    /* text-align: center; */
     transition: color 0.5s ease;
     width: 100%;
-    grid-column: span 7;
+    grid-column: span 5;
     padding-top: 30px;
+    line-height: 24px; /*TODO: turn it into ems*/
 }
 
 .modal-content__header{
+    margin-top: 20vh; 
     margin-bottom: 100px;
+    line-height: 38px;
 }
 
 .show__content{
