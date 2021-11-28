@@ -6,9 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     var nav = document.getElementById("myNav"),
         scrollDetector = document.getElementById("scroll-start-detector");
 
-    // console.log("nav: ", nav);
-    // console.log("scrollDetector: ", scrollDetector);
-
     //function handles callback when observer fires "observing/notObserving" events
     function handleIntersection(entriesArray) {
         entriesArray.map((entry) => {
@@ -77,7 +74,6 @@ function openModal(button, target){
         showImage = target
     }
     else if(target.previousElementSibling instanceof HTMLImageElement){
-        // console.log("it's a figcaption", target.tagName)
         showImage = target.previousElementSibling;
     }
     else{
@@ -88,7 +84,6 @@ function openModal(button, target){
     setTimeout(() => {
         productModal.classList.add('modal__checked');
         modalWrapper.classList.add('modal-active');
-        // modalOverlay.classList.add('overlay-active');
         theHtml.classList.add('hide__scroll');
 
         //if there's some elements inside figcaptionthen it's a gallery
@@ -164,6 +159,11 @@ modalCloseBtn. addEventListener('click', (event)=>{closeModal()});
     function gallerySorting() {
         gallerySortingNames.forEach((element, i) => {
             element.addEventListener("click", async () => {
+                gallerySortingNames.forEach((name)=>{
+                    name.classList.remove('sorting-name__active');
+                });
+                element.classList.add('sorting-name__active');
+
                 if (element.dataset.name === "js-hamisi") {
                     showHideAll("hide");
 
@@ -172,6 +172,7 @@ modalCloseBtn. addEventListener('click', (event)=>{closeModal()});
                     }, 500);
                 }
                 else {
+                    
                     showHideAll("hide");
 
                     let sorted = document.querySelectorAll("." + element.dataset.name);
