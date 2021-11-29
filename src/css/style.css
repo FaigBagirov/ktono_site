@@ -1340,7 +1340,7 @@ transition: color 0.5s ease 0.5s;
     margin-bottom: 7px;
 }
 
-.footer-items__menu ul a {
+.footer-items__menu a {
     color: white;
     text-decoration: none;
 }
