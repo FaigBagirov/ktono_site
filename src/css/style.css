@@ -661,6 +661,7 @@ h5 {
 }
 .menu-active {
     transform: translateX(0) !important;
+    overflow: scroll ;
 }
 .main-menu ul {
     display: flex;
