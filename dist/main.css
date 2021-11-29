@@ -765,7 +765,7 @@ h5 {
 .pros-wrapper {
     max-width: 1262px;
     margin: 0 auto;
-    padding-bottom: 112px;
+    padding-bottom: 50px;
     box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
 }
 
@@ -790,16 +790,22 @@ h5 {
 }
 
 .pros-cards {
-    display: flex;
-    justify-content: space-between;
-    padding: 35px 70px 0;
-    margin-bottom: 0px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 50px;
+    padding: 50px 50px;
+
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* padding: 35px 50px 0; */
+    /* margin-bottom: 0px; */
 
 }
 
 .pros-cards__item {
-    padding: 0 30px;
-    max-width: 370px;
+    /* padding: 0 30px; */
+    /* max-width: 370px; */
+    grid-column: span 4;
 
 }
 .pros-container{
@@ -1370,10 +1376,15 @@ transition: color 0.5s ease 0.5s;
     }
 }
 @media screen and (max-width:992px) {
+    .pros-cards {
+        gap: 20px;
+    }
     .about-container * {
         grid-column: span 2;
     }
-
+    .about-text{
+        padding: 0 10px;
+    }
     .about-second img {
         grid-row-start: -1;
     }
@@ -1467,20 +1478,22 @@ transition: color 0.5s ease 0.5s;
         text-align: center;
         padding: 30px 0 30px;
     }
-
-    
     .pros-cards {
-        flex-wrap: wrap;
+
+        /* flex-wrap: wrap;
         justify-content: center;
-        padding: 0;
+        */
+        padding: 0 20px; 
     }
 
     .pros-cards__item {
-        margin-bottom: 30px;
+        grid-column: span 6;
+
+        /* margin-bottom: 30px;
         display: flex;
         justify-content: flex-start;
         
-        flex-wrap: wrap;
+        flex-wrap: wrap; */
     }
 
     .pros-cards__item img {
@@ -1490,6 +1503,8 @@ transition: color 0.5s ease 0.5s;
         margin-bottom: 15px;
 
     }
+    
+
     .product-card__size__sm {
         grid-column: span 12;
     }
@@ -1530,7 +1545,9 @@ transition: color 0.5s ease 0.5s;
         /* grid-template-columns: repeat(auto-fit, 1fr) !important; */
     }
 
-
+    .pros-cards__item {
+        grid-column: span 12;
+    }
 
     .products-heading {
         flex-wrap: wrap;
