@@ -919,8 +919,9 @@ h5 {
     /* background: rgba(12, 70, 128, 0.5); */
     background: white;
     height: 1px;
-    overflow: hidden;
+    overflow: scroll;
     position: fixed;
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1035,9 +1036,9 @@ transition: color 0.5s ease 0.5s;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
-    /* grid-column: span 5; */
     grid-column: span 6;
-    padding:100px;
+    padding: 92px 0 0 3vw;
+    
     height: auto;
     object-fit: cover;
     overflow: hidden;
@@ -1056,8 +1057,8 @@ transition: color 0.5s ease 0.5s;
     /* text-align: center; */
     transition: color 0.5s ease;
     width: 100%;
-    grid-column: span 5;
-    padding-top: 30px;
+    grid-column: span 6;
+    padding: 30px 3vw 0 0;
     line-height: 24px; /*TODO: turn it into ems*/
 }
 
@@ -1382,12 +1383,23 @@ transition: color 0.5s ease 0.5s;
         grid-column: span 3 ;
 
     }
+    .modal-content__header{
+        margin: 92px 0 30px 0;
+
+    }
 }
 
 @media screen and (max-width:767px) {
     h1{
+        font-size: 55px;
         left: 50%;
         transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.8);
+
+    }
+    .nav{
+        background: transparent !important;
+        width:auto;
     }
     .main-menu {
         width: 100%;
@@ -1405,10 +1417,31 @@ transition: color 0.5s ease 0.5s;
 
     .main-sandwich {
         display: block;
+        cursor: pointer;
     }
-
-    .nav__wrapper {}
-
+    .modal__checked{
+        min-height: 100%;
+        /* height: unset; */
+    }
+    .modal-close{
+        position: sticky;
+        top: 30px;
+        left: 95%;
+    }
+    .product-modal img{
+        grid-column: span 12;
+        top: 0;
+        transform: unset;
+        overflow: unset;
+    }
+    .modal-content{
+        grid-column: span 12;
+        padding: 30px 3vw 0 3vw;
+    }
+    .modal-content__header {
+        text-align: center;
+        margin: 0px 0 30px 0;
+    }
     .main-menu ul {
         display: flex;
         flex-wrap: wrap;
@@ -1464,13 +1497,17 @@ transition: color 0.5s ease 0.5s;
         justify-content: center;
     }
 
-
+    .modal{
+        top: 0;
+        left: 50%;
+        transform: translateX( -50%);
+    }
 }
 
 @media screen and (max-width:500px) {
     h1 {
-        font-size: 18vw;
-        padding: 0;
+        /* font-size: 18vw; */
+        padding: 10vw;
     }
     h2 {
         font-size: 30px;
@@ -1511,6 +1548,6 @@ transition: color 0.5s ease 0.5s;
     }
 
     .address {
-        white-space: unset;
+        white-space: break-spaces !important;
     }
 }

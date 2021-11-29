@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    
     //creates new observer with our callback func passed as an argument
     const observer = new IntersectionObserver(handleIntersection);
 
@@ -52,19 +53,40 @@ document.addEventListener('DOMContentLoaded', () => {
     let mainSandwich = document.querySelector(".main-sandwich"),
         mainMenu = document.querySelector(".main-menu"),
         sandwichLine = document.querySelector(".sandwich-line"),
-        sandwichX = document.querySelector(".main-sandwich-x");
+        sandwichX = document.querySelector(".main-sandwich-x"),
+        screenSize = window.matchMedia("(max-width: 767px)");
+    
+            
+        sandwichX.addEventListener('click', (event) => {
+            mainMenu.classList.remove('menu-active');
+            mainSandwich.style.display = 'block';
+            sandwichX.style.display = 'none';
+        });
+
+        nav.addEventListener('click', (event) => {
+            console.log(event.currentTarget);
+            let theTarget = event.target;
+            if(screenSize.matches 
+                && theTarget.tagName === 'A'){
+                mainMenu.classList.remove('menu-active');
+                mainSandwich.style.display = 'block';
+                sandwichX.style.display = 'none';
+            }
+    
+        });
 
     mainSandwich.addEventListener('click', () => {
-        mainMenu.classList.add('menu-active');
-        mainSandwich.style.display = 'none';
-        sandwichX.style.display = 'block';
+            mainMenu.classList.add('menu-active');
+            mainSandwich.style.display = 'none';
+            sandwichX.style.display = 'block';
     });
+    // mainSandwich.addEventListener('click', () => {
+    //     mainMenu.classList.add('menu-active');
+    //     mainSandwich.style.display = 'none';
+    //     sandwichX.style.display = 'block';
+    // });
 
-    sandwichX.addEventListener('click', () => {
-        mainMenu.classList.remove('menu-active');
-        mainSandwich.style.display = 'block';
-        sandwichX.style.display = 'none';
-    });
+
 
 //Modal window's functionality
 let modalButtons = document.querySelectorAll('.modal__button'),
