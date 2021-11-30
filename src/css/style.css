@@ -908,6 +908,9 @@ h5 {
     margin-bottom: 20px;
 }
 
+.products-heading__title, .products-heading__title h2{
+    font-size: 28px;
+}
 .products-heading__title::after {
     /* position: absolute; */
     display: block;
