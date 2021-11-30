@@ -1318,10 +1318,23 @@ transition: color 0.5s ease 0.5s;
 }
 
 .footer {
+    position: relative;
     background-color: rgb(3, 34, 56);
     /* background-color: #1A5C84; */
     padding: 119px 0;
     color: white;
+}
+.back__link{
+    cursor: pointer;
+
+}
+.back__icon{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 0;
+    transform: translateX(-50%);
+    top: 18%;
 }
 .footer a li:hover{
     opacity: 0.7;
