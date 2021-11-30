@@ -750,7 +750,7 @@ h5 {
     position: absolute;
     font-family: Roboto;
     line-height: 1.2em;
-    top: 28vh;
+    top: 24vh;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 40px 55px 40px 118px;
@@ -821,7 +821,7 @@ h5 {
 }
 
 .pros-cards__item h3 {
-    margin-bottom: 26px;
+    margin-bottom: 10px;
     white-space: nowrap;
 
 }
@@ -1019,12 +1019,12 @@ transition: color 0.5s ease 0.5s;
     margin: 15px 14px 0 0 ;
     display: block;
     position: absolute;
-    top: 100px;
-    right: 0;
+    top: 40px;
+    right: 10px;
     cursor: pointer;
 }
   .modal__checked {
-    z-index: 9;
+    z-index: 10;
     /* background-color: rgba(12, 70, 128, 0.5); */
     /* background-color: rgba(0, 0, 0, 0.9); */
     height: 100%;
@@ -1045,7 +1045,7 @@ transition: color 0.5s ease 0.5s;
     transform: translateY(-50%);
     width: 100%;
     grid-column: span 6;
-    padding: 92px 0 0 3vw;
+    padding: 20px 0 0;
     
     height: auto;
     object-fit: cover;
@@ -1432,7 +1432,7 @@ transition: color 0.5s ease 0.5s;
 }
 @media screen and (max-width:992px) {
     .pros-cards {
-        gap: 20px;
+        gap: 40px 20px;
     }
     .about-container * {
         grid-column: span 2;
@@ -1502,7 +1502,7 @@ transition: color 0.5s ease 0.5s;
     }
     .modal-close{
         position: sticky;
-        top: 30px;
+        top: 20px;
         left: 95%;
     }
     .product-modal img{
@@ -1510,6 +1510,9 @@ transition: color 0.5s ease 0.5s;
         top: 0;
         transform: unset;
         overflow: unset;
+    }
+    .modal-wrapper{
+        gap: 0;
     }
     .modal-content{
         grid-column: span 12;
@@ -1603,7 +1606,9 @@ transition: color 0.5s ease 0.5s;
         font-size: 40px;
     }
     .logo__title {
-        padding: 10vw;
+        padding: 16vw;
+        top: 18vh;
+        
     }
     /*h2 {
         font-size: 30px;
