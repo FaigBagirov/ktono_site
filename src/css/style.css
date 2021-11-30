@@ -1322,16 +1322,17 @@ transition: color 0.5s ease 0.5s;
     color: white;
 }
 .back__link{
+    position: absolute;
+    right: 0;
     cursor: pointer;
-
+    transform: translateX(-50%);
+    top: 3%;
 }
 .back__icon{
-    position: absolute;
+    
     width: 70px;
     height: 70px;
-    right: 0;
-    transform: translateX(-50%);
-    top: 18%;
+
 }
 .footer a li:hover{
     opacity: 0.7;
@@ -1365,9 +1366,14 @@ transition: color 0.5s ease 0.5s;
     color: white;
     text-decoration: none;
 }
-.address span{
+.list__name{
     font-size: 1.1em;
+    position: relative;
+    left:0;
 }
+/* .addr__break{
+    display: inline-block;
+} */
 .menu-item li {
     padding: 5px 0;
 }
@@ -1470,7 +1476,7 @@ transition: color 0.5s ease 0.5s;
     .main-menu ul {
         display: flex;
         flex-wrap: wrap;
-        white-space: nowrap;
+        /* white-space: nowrap; */
         justify-content: center;
         padding: 0 20px;
     }
