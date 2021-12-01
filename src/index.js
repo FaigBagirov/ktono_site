@@ -103,7 +103,7 @@ theHtml = document.querySelector('html');
 function openModal(button, target){
     let showImage;
     if (target instanceof HTMLImageElement){
-        showImage = target
+        showImage = target;
     }
     else if(target.previousElementSibling instanceof HTMLImageElement){
         showImage = target.previousElementSibling;
@@ -114,13 +114,15 @@ function openModal(button, target){
         productModal.style.display = "block";
 
     setTimeout(() => {
-        productModal.classList.add('modal__checked');
+        productModal.classList.add('modal__active');
         modalWrapper.classList.add('modal-active');
         theHtml.classList.add('hide__scroll');
-
-        //if there's some elements inside figcaptionthen it's a gallery
+        productModal.classList.remove('hide_scroll');
+        
+        //it's a gallery if there's some elements inside figcaption 
         if (showImage.nextElementSibling.firstElementChild){
             modalImage.classList.add("gallery__img");
+            productModal.classList.add('hide_scroll');
         }
 
         modalImage.src = showImage.src;
@@ -139,7 +141,7 @@ function openModal(button, target){
 }
 
 let closeModal = ()=> {
-    productModal.classList.remove('modal__checked');
+    productModal.classList.remove('modal__active');
     modalWrapper.classList.remove('modal-active');
     // modalOverlay.classList.remove('overlay-active');
     theHtml.classList.remove('hide__scroll');
