@@ -1,6 +1,4 @@
-/*!*********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/style.css ***!
-  \*********************************************************************/
+
 /* --------------------CSS reset start -------------------- */
 html,
 body,
@@ -1675,3 +1673,4 @@ transition: color 0.5s ease 0.5s;
         white-space: break-spaces !important;
     }
 }
+#loadOverlay{display: none;}

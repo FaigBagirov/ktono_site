@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         nav.addEventListener('click', (event) => {
-            console.log(event.currentTarget);
+            // console.log(event.currentTarget);
             let theTarget = event.target;
             if(screenSize.matches 
                 && theTarget.tagName === 'A'){
@@ -176,7 +176,7 @@ modalCloseBtn. addEventListener('click', (event)=>{closeModal()});
                     item.classList.remove("gallery-hide")
                 }, 10);
             });
-            console.log("show all completed");
+            // console.log("show all completed");
 
         }
         else if (command === "hide") {
@@ -186,7 +186,7 @@ modalCloseBtn. addEventListener('click', (event)=>{closeModal()});
              setTimeout(function () {
                 allItems.forEach((item) => { item.style.display = "none" });
             }, 500);
-            console.log("hide all completed");
+            // console.log("hide all completed");
         }
     }
 
@@ -231,6 +231,6 @@ modalCloseBtn. addEventListener('click', (event)=>{closeModal()});
 });
 
 //should stay at the end of the file
-if (module.hot) {
-    module.hot.accept();
-}
+// if (module.hot) {
+//     module.hot.accept();
+// }
